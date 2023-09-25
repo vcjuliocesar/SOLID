@@ -30,4 +30,4 @@ class EmailAddress:
         
         print(f"Email sent from {self.sender} to {self.addressee} with subject {self.subject}")
         
-        raise NotImplementedError
+        #raise NotImplementedError
