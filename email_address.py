@@ -1,4 +1,4 @@
-class EmailAddress():
+class EmailAddress:
     
     def __init__(self) -> None:
         
@@ -9,8 +9,6 @@ class EmailAddress():
         self.subject = ""
         
         self.body = ""
-        
-        self.send = ""
     
     def set_sender(self,sender:str):
         
@@ -28,6 +26,8 @@ class EmailAddress():
         
         self.body = body
     
-    def set_send(self):
+    def send(self):
         
         print(f"Email sent from {self.sender} to {self.addressee} with subject {self.subject}")
+        
+        raise NotImplementedError
