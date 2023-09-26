@@ -5,3 +5,4 @@ class EmailManager(ABC):
     @abstractmethod
     def send(self):
         pass
+    
