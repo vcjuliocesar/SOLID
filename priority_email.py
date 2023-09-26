@@ -1,6 +1,7 @@
 from email_address import EmailAddress
+from manager_priority import ManagerPriority
  
-class PriorityEmail(EmailAddress):
+class PriorityEmail(EmailAddress,ManagerPriority):
     
     def __init__(self) -> None:
         
