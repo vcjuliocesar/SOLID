@@ -1,4 +1,6 @@
-class EmailAddress:
+from sender_mail import SenderMail
+
+class EmailAddress(SenderMail):
     
     def __init__(self) -> None:
         
