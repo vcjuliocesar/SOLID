@@ -1,7 +1,7 @@
 from abc import ABC,abstractmethod
 
-class ManagerPriority(ABC):
+class EmailManager(ABC):
     
     @abstractmethod
-    def set_priority(self):
+    def send(self):
         pass
