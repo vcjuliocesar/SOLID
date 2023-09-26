@@ -1,18 +1,18 @@
 from email_address import EmailAddress
-from manager_priority import ManagerPriority
+from priority_manager import PriorityManager
  
-class PriorityEmail(EmailAddress,ManagerPriority):
+class PriorityEmail(PriorityManager):
     
-    def __init__(self) -> None:
+    # def __init__(self) -> None:
         
-        super().__init__()
+    #     super().__init__()
         
-        self.priority = "Normal"
+    #     self.priority = "Normal"
         
-    def set_priority(self,priority:str):
+    def set_priority(self,email,priority:str):
         
-        self.priority = priority
+        email.priority = priority
     
-    def send(self):
+    # def send(self):
         
-        print(f"Email sent from {self.sender} to {self.addressee} with subject {self.subject}, priority: {self.priority}")
+    #     print(f"Email sent from {self.sender} to {self.addressee} with subject {self.subject}, priority: {self.priority}")
